@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emotion Gifts - PresentPerfect</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body data-category="emotion">
+
+    <header>
+        <div class="logo" onclick="window.location.href='index.html'">🛍️ GIFT-SHOP</div>
+        <div class="search-bar-box">
+            <input type="text" class="search-input" placeholder="Search name, category, or keyword..." oninput="handleSearch(this.value)">
+            <i class="fas fa-search search-bar-icon"></i>
+        </div>
+        <nav>
+            <span onclick="window.location.href='index.html'">Home</span>
+            <span onclick="window.location.href='index.html?page=auth'" id="auth-nav-btn">Login/Register</span>
+            <div class="cart-icon" onclick="window.location.href='index.html?page=cart'">
+                <i class="fas fa-shopping-cart"></i>
+                <span id="cart-count">0</span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <!-- Breadcrumbs -->
+        <div class="breadcrumbs">
+            <a href="index.html">Home</a> <span>&gt;</span> Emotion Gifts
+        </div>
+
+        <!-- Category Banner -->
+        <div class="category-banner emotion-bg">
+            <div class="category-banner-content">
+                <h1>Emotion Gifts 😊</h1>
+                <p>Express feelings when words aren't enough. Send warmth, express gratitude, say sorry, or congratulate a milestone.</p>
+            </div>
+        </div>
+
+        <!-- Subcategories Navigation -->
+        <div class="subcategories-nav" id="subcategories-container">
+            <!-- Dynamically populated by js/script.js -->
+        </div>
+
+        <!-- Products Collection -->
+        <section>
+            <div class="products-grid animate-fade-in" id="category-products-container">
+                <!-- Products dynamically rendered by js/script.js -->
+            </div>
+
+            <!-- Product Details Modal -->
+            <div id="product-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close-btn" onclick="closeModal()">&times;</span>
+                    <div class="modal-body" id="modal-product-details">
+                        <!-- Filled dynamically by js/script.js -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

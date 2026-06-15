@@ -3,14 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PresentPerfect - Gift Shop</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Gift Shop</title>
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
     <header>
-        <div class="logo" onclick="showPage('products-page')">🛍️ PresentPerfect</div>
+        <div class="logo" onclick="showPage('products-page')">🛍️ GIFT-SHOP</div>
+        <div class="search-bar-box">
+            <input type="text" class="search-input" placeholder="Search name, category, or keyword..." oninput="handleSearch(this.value)">
+            <i class="fas fa-search search-bar-icon"></i>
+        </div>
         <nav>
             <span onclick="showPage('products-page')">Home</span>
             <span onclick="showPage('auth-page')" id="auth-nav-btn">Login/Register</span>
@@ -24,6 +28,61 @@
     <main class="container">
         
         <section id="products-page" class="page active">
+            <!-- Categories Section -->
+            <div class="categories-section">
+                <h2 class="section-title">Shop by Category</h2>
+                <div class="categories-grid">
+                    <a href="relationship.html" class="category-card relationship">
+                        <div class="category-glow"></div>
+                        <div class="category-icon">🎁</div>
+                        <div class="category-info-box">
+                            <h3 class="category-title">Relationship Gifts</h3>
+                            <p class="category-desc">For Mom, Dad, Wife, Friends & more</p>
+                        </div>
+                    </a>
+                    <a href="personality.html" class="category-card personality">
+                        <div class="category-glow"></div>
+                        <div class="category-icon">🎭</div>
+                        <div class="category-info-box">
+                            <h3 class="category-title">Personality Gifts</h3>
+                            <p class="category-desc">For Gamers, Bookworms, Music Lovers</p>
+                        </div>
+                    </a>
+                    <a href="emotion.html" class="category-card emotion">
+                        <div class="category-glow"></div>
+                        <div class="category-icon">😊</div>
+                        <div class="category-info-box">
+                            <h3 class="category-title">Emotion Gifts</h3>
+                            <p class="category-desc">Say Thank You, Sorry, or Good Luck</p>
+                        </div>
+                    </a>
+                    <a href="festival.html" class="category-card festival">
+                        <div class="category-glow"></div>
+                        <div class="category-icon">🎉</div>
+                        <div class="category-info-box">
+                            <h3 class="category-title">Festival Gifts</h3>
+                            <p class="category-desc">Diwali, Christmas, Rakhi & Ugadi</p>
+                        </div>
+                    </a>
+                    <a href="customized.html" class="category-card customized">
+                        <div class="category-glow"></div>
+                        <div class="category-icon">✨</div>
+                        <div class="category-info-box">
+                            <h3 class="category-title">Customized Gifts</h3>
+                            <p class="category-desc">Personalized photo mugs, shirts & frames</p>
+                        </div>
+                    </a>
+                    <a href="trending.html" class="category-card trending">
+                        <div class="category-glow"></div>
+                        <div class="category-icon">🔥</div>
+                        <div class="category-info-box">
+                            <h3 class="category-title">Trending Gifts</h3>
+                            <p class="category-desc">Bestsellers, Top Rated & New Arrivals</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
             <h2 class="section-title">Our Gift Collection</h2>
             <div class="products-grid" id="products-container">
                 </div>
@@ -94,6 +153,6 @@
 
     </main>
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
