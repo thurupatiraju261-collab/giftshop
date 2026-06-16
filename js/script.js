@@ -12,83 +12,83 @@
 // Product Dataset containing general and specific categories of gifts
 const PRODUCTS = [
     // Existing base products (tagged for category/subcategory mapping)
-    { id: 1, name: "Handmade Scented Candle Set", price: 24.99, icon: "🕯️", desc: "Premium organic soy wax candles with essential oils.", category: "trending", subcategory: "Best Sellers" },
-    { id: 2, name: "Customized Photo Leather Journal", price: 19.99, icon: "📔", desc: "Engraved genuine leather journal notebook.", category: "customized", subcategory: "Name Gifts" },
-    { id: 3, name: "Galaxy Glow Glass Orbs", price: 34.50, icon: "🔮", desc: "A mesmerizing miniature universe glowing via USB power.", category: "trending", subcategory: "Best Sellers" },
-    { id: 4, name: "Luxury Chocolate Gift Box", price: 29.99, icon: "🍫", desc: "16 assortments of artisanal Swiss chocolates.", category: "trending", subcategory: "Most Loved Gifts" },
-    { id: 5, name: "Preserved Eternal Rose Bouquet", price: 45.00, icon: "🌹", desc: "Real roses treated to last up to 3 years without water.", category: "relationship", subcategory: "For Wife" },
-    { id: 6, name: "Cute Ceramic Mug Trio", price: 15.99, icon: "☕", desc: "Three custom minimalist animal themed stackable mugs.", category: "trending", subcategory: "Most Loved Gifts" },
+    { id: 1, name: "Handmade Scented Candle Set", price: 24.99, image: "images/products/scented_candle.png", alt: "Premium handmade scented soy wax candle set", desc: "Premium organic soy wax candles with essential oils.", category: "trending", subcategory: "Best Sellers" },
+    { id: 2, name: "Customized Photo Leather Journal", price: 19.99, image: "images/products/personalized_journal.png", alt: "Custom engraved leather journal", desc: "Engraved genuine leather journal notebook.", category: "customized", subcategory: "Name Gifts" },
+    { id: 3, name: "Galaxy Glow Glass Orbs", price: 34.50, image: "images/products/galaxy_orb.png", alt: "USB powered glowing galaxy glass orb decoration", desc: "A mesmerizing miniature universe glowing via USB power.", category: "trending", subcategory: "Best Sellers" },
+    { id: 4, name: "Luxury Chocolate Gift Box", price: 29.99, image: "images/products/chocolate_box.png", alt: "Box of premium Swiss chocolates and truffles", desc: "16 assortments of artisanal Swiss chocolates.", category: "trending", subcategory: "Most Loved Gifts" },
+    { id: 5, name: "Preserved Eternal Rose Bouquet", price: 45.00, image: "images/products/flower_bouquet.png", alt: "Bouquet of preserved real roses in red and white", desc: "Real roses treated to last up to 3 years without water.", category: "relationship", subcategory: "For Wife" },
+    { id: 6, name: "Cute Ceramic Mug Trio", price: 15.99, image: "images/products/mug.png", alt: "Three cute stackable minimalist ceramic mugs", desc: "Three custom minimalist animal themed stackable mugs.", category: "trending", subcategory: "Most Loved Gifts" },
 
     // Core Sample Products requested by user
-    { id: 101, name: "Photo Mug", price: 14.99, icon: "☕", desc: "A customizable ceramic mug printed with your favorite memory.", category: "customized", subcategory: "Photo Mugs" },
-    { id: 102, name: "Personalized Keychain", price: 9.99, icon: "🔑", desc: "Engraved metal keychain with custom name or initials.", category: "customized", subcategory: "Custom Keychains" },
-    { id: 103, name: "Teddy Bear", price: 18.50, icon: "🧸", desc: "Soft, cuddly teddy bear perfect to express comfort and love.", category: "emotion", subcategory: "Get Well Soon Gifts" },
-    { id: 104, name: "Travel Kit", price: 34.99, icon: "🧳", desc: "Premium travel accessories set including passport cover and organizer.", category: "personality", subcategory: "For Travelers" },
-    { id: 105, name: "Coffee Hamper", price: 42.00, icon: "☕", desc: "Curated selection of single-origin coffee beans, mug, and cookies.", category: "personality", subcategory: "For Coffee Lovers" },
-    { id: 106, name: "Festival Gift Hamper", price: 49.99, icon: "🎉", desc: "Deluxe holiday sweets, snacks, and lights combination.", category: "festival", subcategory: "New Year Gifts" },
-    { id: 107, name: "Chocolate Gift Box", price: 25.00, icon: "🍫", desc: "Decadent box of fine milk and dark chocolate truffles.", category: "trending", subcategory: "Best Sellers" },
+    { id: 101, name: "Photo Mug", price: 14.99, image: "images/products/mug.png", alt: "White ceramic mug printed with custom photo memory", desc: "A customizable ceramic mug printed with your favorite memory.", category: "customized", subcategory: "Photo Mugs" },
+    { id: 102, name: "Personalized Keychain", price: 9.99, image: "images/products/keychain.png", alt: "Engraved metal and leather keychain with custom initials", desc: "Engraved metal keychain with custom name or initials.", category: "customized", subcategory: "Custom Keychains" },
+    { id: 103, name: "Teddy Bear", price: 18.50, image: "images/products/teddy_bear.png", alt: "Fluffy cuddly teddy bear with a red velvet bow", desc: "Soft, cuddly teddy bear perfect to express comfort and love.", category: "emotion", subcategory: "Get Well Soon Gifts" },
+    { id: 104, name: "Travel Kit", price: 34.99, image: "images/products/travel_kit.png", alt: "Premium travel leather passport cover and luggage tag kit", desc: "Premium travel accessories set including passport cover and organizer.", category: "personality", subcategory: "For Travelers" },
+    { id: 105, name: "Coffee Hamper", price: 42.00, image: "images/products/coffee_set.png", alt: "Premium coffee gift box with single-origin beans and french press", desc: "Curated selection of single-origin coffee beans, mug, and cookies.", category: "personality", subcategory: "For Coffee Lovers" },
+    { id: 106, name: "Festival Gift Hamper", price: 49.99, image: "images/categories/festival.png", alt: "Deluxe holiday sweets and lights festive hamper", desc: "Deluxe holiday sweets, snacks, and lights combination.", category: "festival", subcategory: "New Year Gifts" },
+    { id: 107, name: "Chocolate Gift Box", price: 25.00, image: "images/products/chocolate_box.png", alt: "Luxury chocolate truffle gift box", desc: "Decadent box of fine milk and dark chocolate truffles.", category: "trending", subcategory: "Best Sellers" },
 
     // Relationship Page Products
-    { id: 7, name: "Best Mom Ever Hand-painted Mug", price: 18.90, icon: "☕", desc: "A charming, hand-glazed ceramic mug crafted specifically for moms.", category: "relationship", subcategory: "For Mom" },
-    { id: 8, name: "Preserved Orchid Gift Set", price: 42.00, icon: "🌸", desc: "Exquisite preserved orchids in a premium glass bell jar.", category: "relationship", subcategory: "For Mom" },
-    { id: 9, name: "Gold Heart Pendant Necklace", price: 65.00, icon: "💖", desc: "18k gold-plated heart necklace that symbolizes pure love.", category: "relationship", subcategory: "For Mom" },
-    { id: 10, name: "Engraved Leather Wallet", price: 28.50, icon: "💼", desc: "Slim genuine leather wallet engraved with a personal message.", category: "relationship", subcategory: "For Dad" },
-    { id: 11, name: "Premium Beard Grooming Kit", price: 32.00, icon: "🧔", desc: "Organic beard oils, wooden comb, and stainless steel scissors.", category: "relationship", subcategory: "For Dad" },
-    { id: 12, name: "Wooden Smart Docking Station", price: 38.00, icon: "📱", desc: "Keep watch, keys, wallet, and phone organized on his desk.", category: "relationship", subcategory: "For Dad" },
-    { id: 13, name: "RGB Gaming Headset Stand", price: 24.99, icon: "🎧", desc: "Sleek aluminum stand with customizable underglow options.", category: "relationship", subcategory: "For Brother" },
-    { id: 14, name: "Adventure Canvas Backpack", price: 45.99, icon: "🎒", desc: "Rugged, water-resistant canvas pack perfect for daily commute.", category: "relationship", subcategory: "For Brother" },
-    { id: 15, name: "Self-Care Spa Bath Basket", price: 49.90, icon: "🧼", desc: "Includes aromatic bath bombs, body scrubs, and plush towel.", category: "relationship", subcategory: "For Sister" },
-    { id: 16, name: "Custom Name Script Necklace", price: 29.99, icon: "📿", desc: "Elegantly scripted stainless steel name necklace.", category: "relationship", subcategory: "For Sister" },
-    { id: 17, name: "Friendship Photo Collage Frame", price: 22.00, icon: "🖼️", desc: "Displays 5 of your favorite moments together with custom text.", category: "relationship", subcategory: "For Best Friend" },
-    { id: 18, name: "Aura Color-Changing Lamp", price: 35.00, icon: "💡", desc: "Touch-activated color changing ambiance light.", category: "relationship", subcategory: "For Best Friend" },
-    { id: 19, name: "Silk Pajama Lounge Set", price: 55.00, icon: "👚", desc: "Ultra-comfortable mulberry silk sleepwear set.", category: "relationship", subcategory: "For Wife" },
-    { id: 20, name: "Fossil Chronograph Watch", price: 120.00, icon: "⌚", desc: "Classic stainless steel watch with timeless style.", category: "relationship", subcategory: "For Husband" },
-    { id: 21, name: "Engraved Whiskey Decanter Set", price: 68.00, icon: "🥃", desc: "Premium crystal decanter with 2 matching glasses.", category: "relationship", subcategory: "For Husband" },
+    { id: 7, name: "Best Mom Ever Hand-painted Mug", price: 18.90, image: "images/products/mug.png", alt: "Ceramic glazed mug for Mom", desc: "A charming, hand-glazed ceramic mug crafted specifically for moms.", category: "relationship", subcategory: "For Mom" },
+    { id: 8, name: "Preserved Orchid Gift Set", price: 42.00, image: "images/products/flower_bouquet.png", alt: "Preserved orchids in glass bell jar", desc: "Exquisite preserved orchids in a premium glass bell jar.", category: "relationship", subcategory: "For Mom" },
+    { id: 9, name: "Gold Heart Pendant Necklace", price: 65.00, image: "images/products/flower_bouquet.png", alt: "18k gold-plated heart pendant necklace", desc: "18k gold-plated heart necklace that symbolizes pure love.", category: "relationship", subcategory: "For Mom" },
+    { id: 10, name: "Engraved Leather Wallet", price: 28.50, image: "images/products/travel_kit.png", alt: "Engraved genuine leather slim wallet", desc: "Slim genuine leather wallet engraved with a personal message.", category: "relationship", subcategory: "For Dad" },
+    { id: 11, name: "Premium Beard Grooming Kit", price: 32.00, image: "images/products/travel_kit.png", alt: "Premium organic beard grooming kit", desc: "Organic beard oils, wooden comb, and stainless steel scissors.", category: "relationship", subcategory: "For Dad" },
+    { id: 12, name: "Wooden Smart Docking Station", price: 38.00, image: "images/products/travel_kit.png", alt: "Wooden desktop organizer docking station", desc: "Keep watch, keys, wallet, and phone organized on his desk.", category: "relationship", subcategory: "For Dad" },
+    { id: 13, name: "RGB Gaming Headset Stand", price: 24.99, image: "images/products/gaming_stand.png", alt: "Aluminum gaming headset stand with RGB underglow", desc: "Sleek aluminum stand with customizable underglow options.", category: "relationship", subcategory: "For Brother" },
+    { id: 14, name: "Adventure Canvas Backpack", price: 45.99, image: "images/products/travel_kit.png", alt: "Water-resistant canvas adventure backpack", desc: "Rugged, water-resistant canvas pack perfect for daily commute.", category: "relationship", subcategory: "For Brother" },
+    { id: 15, name: "Self-Care Spa Bath Basket", price: 49.90, image: "images/products/spa_basket.png", alt: "Self-care lavender spa bath basket", desc: "Includes aromatic bath bombs, body scrubs, and plush towel.", category: "relationship", subcategory: "For Sister" },
+    { id: 16, name: "Custom Name Script Necklace", price: 29.99, image: "images/products/flower_bouquet.png", alt: "Elegant scripted stainless steel name necklace", desc: "Elegantly scripted stainless steel name necklace.", category: "relationship", subcategory: "For Sister" },
+    { id: 17, name: "Friendship Photo Collage Frame", price: 22.00, image: "images/products/personalized_frame.png", alt: "Personalized wood collage frame for friendship photos", desc: "Displays 5 of your favorite moments together with custom text.", category: "relationship", subcategory: "For Best Friend" },
+    { id: 18, name: "Aura Color-Changing Lamp", price: 35.00, image: "images/products/galaxy_orb.png", alt: "Touch-activated color changing ambiance light", desc: "Touch-activated color changing ambiance light.", category: "relationship", subcategory: "For Best Friend" },
+    { id: 19, name: "Silk Pajama Lounge Set", price: 55.00, image: "images/products/tshirt.png", alt: "Mulberry silk pajama sleepwear set", desc: "Ultra-comfortable mulberry silk sleepwear set.", category: "relationship", subcategory: "For Wife" },
+    { id: 20, name: "Fossil Chronograph Watch", price: 120.00, image: "images/products/travel_kit.png", alt: "Stainless steel Fossil chronograph watch", desc: "Classic stainless steel watch with timeless style.", category: "relationship", subcategory: "For Husband" },
+    { id: 21, name: "Engraved Whiskey Decanter Set", price: 68.00, image: "images/products/whiskey_set.png", alt: "Crystal whiskey decanter and matching glasses set", desc: "Premium crystal decanter with 2 matching glasses.", category: "relationship", subcategory: "For Husband" },
 
     // Personality Page Products
-    { id: 22, name: "Premium Oak Book Nook Insert", price: 45.00, icon: "📚", desc: "An architectural miniature shelf divider with warm LED lights.", category: "personality", subcategory: "For Book Lovers" },
-    { id: 23, name: "Embossed Leather Bookmarks", price: 12.99, icon: "🔖", desc: "Hand-tooled full-grain leather bookmarks, set of 3.", category: "personality", subcategory: "For Book Lovers" },
-    { id: 24, name: "Ergonomic Mechanical Keyboard", price: 89.00, icon: "⌨️", desc: "Hot-swappable tactile keys with gorgeous RGB backlighting.", category: "personality", subcategory: "For Gamers" },
-    { id: 25, name: "Classic Retro Arcade Mini Cabinet", price: 99.00, icon: "🕹️", desc: "Play 200 built-in retro games on a crisp 3-inch LCD screen.", category: "personality", subcategory: "For Gamers" },
-    { id: 26, name: "Scratch-off World Map Poster", price: 19.99, icon: "🗺️", desc: "Track your journeys by scratching away the gold foil layer.", category: "personality", subcategory: "For Travelers" },
-    { id: 27, name: "Monogrammed Passport Holder", price: 24.50, icon: "🛄", desc: "Handcrafted leather cover with handy card slots.", category: "personality", subcategory: "For Travelers" },
-    { id: 28, name: "Smart Water Bottle", price: 39.99, icon: "💧", desc: "Reminds you to drink water and sterilizes using UV-C light.", category: "personality", subcategory: "For Fitness Lovers" },
-    { id: 29, name: "Deep Tissue Massage Gun", price: 79.99, icon: "🔋", desc: "Includes 6 dynamic massage heads for targeted muscle relief.", category: "personality", subcategory: "For Fitness Lovers" },
-    { id: 30, name: "Smart Temperature Control Mug", price: 95.00, icon: "🥛", desc: "Keeps your brew at the perfect temperature all day.", category: "personality", subcategory: "For Coffee Lovers" },
-    { id: 31, name: "Artisanal Coffee Bean Sampler", price: 34.00, icon: "☕", desc: "Six different whole bean single-origin coffees from global roasters.", category: "personality", subcategory: "For Coffee Lovers" },
-    { id: 32, name: "Vintage Bluetooth Turntable", price: 110.00, icon: "📻", desc: "Classic suitcase record player with high-fidelity stereo speakers.", category: "personality", subcategory: "For Music Lovers" },
-    { id: 33, name: "Guitar Pick Punch Kit", price: 18.50, icon: "🎸", desc: "Punch your own custom guitar picks from old credit cards.", category: "personality", subcategory: "For Music Lovers" },
+    { id: 22, name: "Premium Oak Book Nook Insert", price: 45.00, image: "images/products/book_nook.png", alt: "Miniature bookshelf divider nook insert with LED lights", desc: "An architectural miniature shelf divider with warm LED lights.", category: "personality", subcategory: "For Book Lovers" },
+    { id: 23, name: "Embossed Leather Bookmarks", price: 12.99, image: "images/products/book_nook.png", alt: "Hand-tooled genuine leather bookmarks", desc: "Hand-tooled full-grain leather bookmarks, set of 3.", category: "personality", subcategory: "For Book Lovers" },
+    { id: 24, name: "Ergonomic Mechanical Keyboard", price: 89.00, image: "images/products/keyboard.png", alt: "Tactile hot-swappable mechanical gaming keyboard with RGB", desc: "Hot-swappable tactile keys with gorgeous RGB backlighting.", category: "personality", subcategory: "For Gamers" },
+    { id: 25, name: "Classic Retro Arcade Mini Cabinet", price: 99.00, image: "images/products/keyboard.png", alt: "Retro arcade mini console with LCD screen", desc: "Play 200 built-in retro games on a crisp 3-inch LCD screen.", category: "personality", subcategory: "For Gamers" },
+    { id: 26, name: "Scratch-off World Map Poster", price: 19.99, image: "images/products/travel_kit.png", alt: "Scratch-off world map tracking travel journeys", desc: "Track your journeys by scratching away the gold foil layer.", category: "personality", subcategory: "For Travelers" },
+    { id: 27, name: "Monogrammed Passport Holder", price: 24.50, image: "images/products/travel_kit.png", alt: "Monogrammed leather passport holder cover", desc: "Handcrafted leather cover with handy card slots.", category: "personality", subcategory: "For Travelers" },
+    { id: 28, name: "Smart Water Bottle", price: 39.99, image: "images/products/galaxy_orb.png", alt: "Smart water bottle with UV-C sterilizer", desc: "Reminds you to drink water and sterilizes using UV-C light.", category: "personality", subcategory: "For Fitness Lovers" },
+    { id: 29, name: "Deep Tissue Massage Gun", price: 79.99, image: "images/products/travel_kit.png", alt: "Deep tissue muscle massage gun with attachments", desc: "Includes 6 dynamic massage heads for targeted muscle relief.", category: "personality", subcategory: "For Fitness Lovers" },
+    { id: 30, name: "Smart Temperature Control Mug", price: 95.00, image: "images/products/mug.png", alt: "Smart temperature control smart travel mug", desc: "Keeps your brew at the perfect temperature all day.", category: "personality", subcategory: "For Coffee Lovers" },
+    { id: 31, name: "Artisanal Coffee Bean Sampler", price: 34.00, image: "images/products/coffee_set.png", alt: "Six roast variety bag set of single-origin coffee beans", desc: "Six different whole bean single-origin coffees from global roasters.", category: "personality", subcategory: "For Coffee Lovers" },
+    { id: 32, name: "Vintage Bluetooth Turntable", price: 110.00, image: "images/products/keyboard.png", alt: "Vintage retro record player briefcase style turntable", desc: "Classic suitcase record player with high-fidelity stereo speakers.", category: "personality", subcategory: "For Music Lovers" },
+    { id: 33, name: "Guitar Pick Punch Kit", price: 18.50, image: "images/products/keyboard.png", alt: "Guitar pick punch tool maker kit", desc: "Punch your own custom guitar picks from old credit cards.", category: "personality", subcategory: "For Music Lovers" },
 
     // Emotion Page Products
-    { id: 34, name: "Grateful Heart Succulent Garden", price: 29.99, icon: "🪴", desc: "A beautifully arranged pot of live micro-succulents.", category: "emotion", subcategory: "Thank You Gifts" },
-    { id: 35, name: "Thank You Scented Soy Candle", price: 18.00, icon: "🕯️", desc: "Lavender and vanilla infused therapeutic candle.", category: "emotion", subcategory: "Thank You Gifts" },
-    { id: 36, name: "Sweet Apology Chocolate Box", price: 22.00, icon: "🍫", desc: "Assortment of dark truffles spell-out 'SORRY' in style.", category: "emotion", subcategory: "Sorry Gifts" },
-    { id: 37, name: "Handmade Lavender Mist Duo", price: 16.90, icon: "🧴", desc: "Calming essential oil sprays to soothe and refresh.", category: "emotion", subcategory: "Sorry Gifts" },
-    { id: 38, name: "Four-Leaf Clover Silver Keychain", price: 12.00, icon: "🍀", desc: "Real dried four-leaf clover encased in a resin keychain.", category: "emotion", subcategory: "Good Luck Gifts" },
-    { id: 39, name: "Amethyst Feng Shui Gem Tree", price: 34.99, icon: "🌲", desc: "Brings positive energy, prosperity, and focus to your room.", category: "emotion", subcategory: "Good Luck Gifts" },
-    { id: 40, name: "Pop the Bubbly Champagne Flutes", price: 39.00, icon: "🥂", desc: "Hand-blown crystal glasses with gold-dipped bases.", category: "emotion", subcategory: "Congratulations Gifts" },
-    { id: 41, name: "Gourmet Celebration Snack Hamper", price: 55.00, icon: "🧺", desc: "Filled with cheeses, crackers, olives, and premium nuts.", category: "emotion", subcategory: "Congratulations Gifts" },
-    { id: 42, name: "Cozy Fleece & Fuzzy Socks Set", price: 35.00, icon: "🧦", desc: "Luxuriously soft blanket paired with thermal crew socks.", category: "emotion", subcategory: "Get Well Soon Gifts" },
-    { id: 43, name: "Eucalyptus Therapeutic Bath Salts", price: 19.99, icon: "🧂", desc: "Mineral-rich sea salts blended with pure essential oils.", category: "emotion", subcategory: "Get Well Soon Gifts" },
+    { id: 34, name: "Grateful Heart Succulent Garden", price: 29.99, image: "images/products/flower_bouquet.png", alt: "Arranged live micro-succulents garden pot", desc: "A beautifully arranged pot of live micro-succulents.", category: "emotion", subcategory: "Thank You Gifts" },
+    { id: 35, name: "Thank You Scented Soy Candle", price: 18.00, image: "images/products/scented_candle.png", alt: "Lavender and vanilla scented therapeutic candle", desc: "Lavender and vanilla infused therapeutic candle.", category: "emotion", subcategory: "Thank You Gifts" },
+    { id: 36, name: "Sweet Apology Chocolate Box", price: 22.00, image: "images/products/chocolate_box.png", alt: "Sweet apology gourmet chocolate truffles spelling SORRY", desc: "Assortment of dark truffles spell-out 'SORRY' in style.", category: "emotion", subcategory: "Sorry Gifts" },
+    { id: 37, name: "Handmade Lavender Mist Duo", price: 16.90, image: "images/products/scented_candle.png", alt: "Calming essential oil lavender mist spray duo", desc: "Calming essential oil sprays to soothe and refresh.", category: "emotion", subcategory: "Sorry Gifts" },
+    { id: 38, name: "Four-Leaf Clover Silver Keychain", price: 12.00, image: "images/products/keychain.png", alt: "Real dried four-leaf clover resin keychain", desc: "Real dried four-leaf clover encased in a resin keychain.", category: "emotion", subcategory: "Good Luck Gifts" },
+    { id: 39, name: "Amethyst Feng Shui Gem Tree", price: 34.99, image: "images/products/flower_bouquet.png", alt: "Amethyst crystal bonsai gem tree decoration", desc: "Brings positive energy, prosperity, and focus to your room.", category: "emotion", subcategory: "Good Luck Gifts" },
+    { id: 40, name: "Pop the Bubbly Champagne Flutes", price: 39.00, image: "images/products/whiskey_set.png", alt: "Gold-dipped base crystal champagne flutes pair", desc: "Hand-blown crystal glasses with gold-dipped bases.", category: "emotion", subcategory: "Congratulations Gifts" },
+    { id: 41, name: "Gourmet Celebration Snack Hamper", price: 55.00, image: "images/products/gift_hamper.png", alt: "Gourmet cheeses and celebration snack basket hamper", desc: "Filled with cheeses, crackers, olives, and premium nuts.", category: "emotion", subcategory: "Congratulations Gifts" },
+    { id: 42, name: "Cozy Fleece & Fuzzy Socks Set", price: 35.00, image: "images/products/teddy_bear.png", alt: "Super soft fleece blanket and fuzzy thermal socks combo", desc: "Luxuriously soft blanket paired with thermal crew socks.", category: "emotion", subcategory: "Get Well Soon Gifts" },
+    { id: 43, name: "Eucalyptus Therapeutic Bath Salts", price: 19.99, image: "images/products/scented_candle.png", alt: "Eucalyptus organic therapeutic sea bath salts", desc: "Mineral-rich sea salts blended with pure essential oils.", category: "emotion", subcategory: "Get Well Soon Gifts" },
 
     // Festival Page Products
-    { id: 44, name: "Premium Handcrafted Clay Diyas", price: 15.00, icon: "🪔", desc: "Set of 6 hand-painted terracotta lamps for home decoration.", category: "festival", subcategory: "Diwali Gifts" },
-    { id: 45, name: "Artisanal Sweets & Dry Fruit Box", price: 39.90, icon: "🍬", desc: "Traditional luxury festive sweet treats assortment.", category: "festival", subcategory: "Diwali Gifts" },
-    { id: 46, name: "Custom Holiday Monogram Stocking", price: 14.99, icon: "🧦", desc: "Embroidered felt stocking with festive reindeer patterns.", category: "festival", subcategory: "Christmas Gifts" },
-    { id: 47, name: "Gourmet Hot Chocolate Bomb Kit", price: 24.00, icon: "☕", desc: "Four chocolate bombs packed with marshmallows.", category: "festival", subcategory: "Christmas Gifts" },
-    { id: 48, name: "Premium Goal Planner & Pen Set", price: 29.99, icon: "📓", desc: "2027 daily planner with faux-leather cover and ballpoint pen.", category: "festival", subcategory: "New Year Gifts" },
-    { id: 49, name: "925 Silver Rakhi Combo Set", price: 18.00, icon: "🎗️", desc: "Elegantly designed silver thread Rakhi with roli-chawal pack.", category: "festival", subcategory: "Raksha Bandhan Gifts" },
-    { id: 50, name: "Traditional Mango Leaf Brass Toran", price: 32.50, icon: "🍃", desc: "Auspicious door decoration set for Ugadi and new beginnings.", category: "festival", subcategory: "Ugadi Gifts" },
+    { id: 44, name: "Premium Handcrafted Clay Diyas", price: 15.00, image: "images/categories/festival.png", alt: "Traditional hand-painted Indian clay terracotta diyas set", desc: "Set of 6 hand-painted terracotta lamps for home decoration.", category: "festival", subcategory: "Diwali Gifts" },
+    { id: 45, name: "Artisanal Sweets & Dry Fruit Box", price: 39.90, image: "images/products/chocolate_box.png", alt: "Artisanal traditional sweets and nuts gift box", desc: "Traditional luxury festive sweet treats assortment.", category: "festival", subcategory: "Diwali Gifts" },
+    { id: 46, name: "Custom Holiday Monogram Stocking", price: 14.99, image: "images/categories/festival.png", alt: "Embroidered felt custom Christmas stocking", desc: "Embroidered felt stocking with festive reindeer patterns.", category: "festival", subcategory: "Christmas Gifts" },
+    { id: 47, name: "Gourmet Hot Chocolate Bomb Kit", price: 24.00, image: "images/categories/festival.png", alt: "Gourmet marshmallow hot cocoa bomb set", desc: "Four chocolate bombs packed with marshmallows.", category: "festival", subcategory: "Christmas Gifts" },
+    { id: 48, name: "Premium Goal Planner & Pen Set", price: 29.99, image: "images/products/book_nook.png", alt: "Faux leather journal goal planner and pen set", desc: "2027 daily planner with faux-leather cover and ballpoint pen.", category: "festival", subcategory: "New Year Gifts" },
+    { id: 49, name: "925 Silver Rakhi Combo Set", price: 18.00, image: "images/categories/festival.png", alt: "Silver thread Rakhi combo set for Raksha Bandhan", desc: "Elegantly designed silver thread Rakhi with roli-chawal pack.", category: "festival", subcategory: "Raksha Bandhan Gifts" },
+    { id: 50, name: "Traditional Mango Leaf Brass Toran", price: 32.50, image: "images/categories/festival.png", alt: "Auspicious brass door toran hanging decoration", desc: "Auspicious door decoration set for Ugadi and new beginnings.", category: "festival", subcategory: "Ugadi Gifts" },
 
     // Customized Page Products
-    { id: 51, name: "Engraved Wooden Photo Frame", price: 24.90, icon: "🖼️", desc: "Solid pine wood frame engraved with your chosen date/quote.", category: "customized", subcategory: "Photo Frames" },
-    { id: 52, name: "Led-Lighted Acrylic Photo Stand", price: 34.00, icon: "💡", desc: "Custom photo printed on clear acrylic with a wooden LED base.", category: "customized", subcategory: "Photo Frames" },
-    { id: 53, name: "Magic Heat-Sensitive Photo Mug", price: 16.99, icon: "☕", desc: "Add hot liquid to reveal your secret custom photo print.", category: "customized", subcategory: "Photo Mugs" },
-    { id: 54, name: "Custom Name Ceramic Coffee Mug", price: 14.50, icon: "🥛", desc: "Minimalist ceramic mug with custom calligraphy lettering.", category: "customized", subcategory: "Photo Mugs" },
-    { id: 55, name: "Engraved Handwriting Keychain", price: 14.99, icon: "🔑", desc: "Stainless steel key tag engraved with your actual handwriting.", category: "customized", subcategory: "Custom Keychains" },
-    { id: 56, name: "Leather Photo Filmstrip Keychain", price: 19.99, icon: "🎞️", desc: "Pocket leather sleeve containing a pull-out photos strip.", category: "customized", subcategory: "Custom Keychains" },
-    { id: 57, name: "Personalized Portrait Embroidered Tee", price: 39.00, icon: "👕", desc: "Send in a photo, get a custom line-art embroidery shirt.", category: "customized", subcategory: "Custom T-Shirts" },
-    { id: 58, name: "Custom Wooden Name Decor Sign", price: 29.99, icon: "🪵", desc: "Laser-cut script name decoration for bedroom wall or door.", category: "customized", subcategory: "Name Gifts" }
+    { id: 51, name: "Engraved Wooden Photo Frame", price: 24.90, image: "images/products/personalized_frame.png", alt: "Engraved pine wood memory photo frame", desc: "Solid pine wood frame engraved with your chosen date/quote.", category: "customized", subcategory: "Photo Frames" },
+    { id: 52, name: "Led-Lighted Acrylic Photo Stand", price: 34.00, image: "images/products/personalized_frame.png", alt: "Led custom clear acrylic photo display stand", desc: "Custom photo printed on clear acrylic with a wooden LED base.", category: "customized", subcategory: "Photo Frames" },
+    { id: 53, name: "Magic Heat-Sensitive Photo Mug", price: 16.99, image: "images/products/mug.png", alt: "Magic heat-sensitive photo reveal ceramic mug", desc: "Add hot liquid to reveal your secret custom photo print.", category: "customized", subcategory: "Photo Mugs" },
+    { id: 54, name: "Custom Name Ceramic Coffee Mug", price: 14.50, image: "images/products/mug.png", alt: "Calligraphy custom name ceramic coffee mug", desc: "Minimalist ceramic mug with custom calligraphy lettering.", category: "customized", subcategory: "Photo Mugs" },
+    { id: 55, name: "Engraved Handwriting Keychain", price: 14.99, image: "images/products/keychain.png", alt: "Custom script handwriting engraved metal keychain", desc: "Stainless steel key tag engraved with your actual handwriting.", category: "customized", subcategory: "Custom Keychains" },
+    { id: 56, name: "Leather Photo Filmstrip Keychain", price: 19.99, image: "images/products/keychain.png", alt: "Leather photo filmstrip keychain pullout", desc: "Pocket leather sleeve containing a pull-out photos strip.", category: "customized", subcategory: "Custom Keychains" },
+    { id: 57, name: "Personalized Portrait Embroidered Tee", price: 39.00, image: "images/products/tshirt.png", alt: "Custom line art embroidered white cotton t-shirt", desc: "Send in a photo, get a custom line-art embroidery shirt.", category: "customized", subcategory: "Custom T-Shirts" },
+    { id: 58, name: "Custom Wooden Name Decor Sign", price: 29.99, image: "images/products/personalized_frame.png", alt: "Laser cut wood name sign decor for wall", desc: "Laser-cut script name decoration for bedroom wall or door.", category: "customized", subcategory: "Name Gifts" }
 ];
 
 // Subcategory definitions for category page generation
@@ -247,7 +247,7 @@ function loadProducts() {
         const highlightedName = highlightText(product.name, activeSearchQuery);
         return `
             <div class="product-card" onclick="openProductDetails(${product.id})">
-                <div class="product-img">${product.icon}</div>
+                <div class="product-img"><img src="${product.image}" alt="${product.alt}" loading="lazy"></div>
                 <div class="product-info">
                     <h3 class="product-title">${highlightedName}</h3>
                     <p class="product-price">$${product.price.toFixed(2)}</p>
@@ -336,7 +336,7 @@ function filterCategoryProducts(category, subcategory) {
         const highlightedName = highlightText(product.name, activeSearchQuery);
         return `
             <div class="product-card" onclick="openProductDetails(${product.id})">
-                <div class="product-img">${product.icon}</div>
+                <div class="product-img"><img src="${product.image}" alt="${product.alt}" loading="lazy"></div>
                 <div class="product-info">
                     <h3 class="product-title">${highlightedName}</h3>
                     <p class="product-price">$${product.price.toFixed(2)}</p>
@@ -358,7 +358,7 @@ function openProductDetails(id) {
     
     content.innerHTML = `
         <div class="modal-grid">
-            <div class="product-img" style="font-size:6rem; height:250px;">${product.icon}</div>
+            <div class="product-img" style="height:250px;"><img src="${product.image}" alt="${product.alt}"></div>
             <div>
                 <h2 style="font-weight: 800; line-height: 1.2; color: var(--secondary-color);">${product.name}</h2>
                 <p class="product-price" style="margin: 1rem 0; font-size: 1.5rem;">$${product.price.toFixed(2)}</p>

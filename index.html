@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,12 +8,14 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
 
     <header>
         <div class="logo" onclick="showPage('products-page')">🛍️ GIFT-SHOP</div>
         <div class="search-bar-box">
-            <input type="text" class="search-input" placeholder="Search name, category, or keyword..." oninput="handleSearch(this.value)">
+            <input type="text" class="search-input" placeholder="Search name, category, or keyword..."
+                oninput="handleSearch(this.value)">
             <i class="fas fa-search search-bar-icon"></i>
         </div>
         <nav>
@@ -26,7 +29,7 @@
     </header>
 
     <main class="container">
-        
+
         <section id="products-page" class="page active">
             <!-- Categories Section -->
             <div class="categories-section">
@@ -34,7 +37,7 @@
                 <div class="categories-grid">
                     <a href="relationship.html" class="category-card relationship">
                         <div class="category-glow"></div>
-                        <div class="category-icon">🎁</div>
+                        <img class="category-image" src="images/categories/relationship.png" alt="Relationship Gifts">
                         <div class="category-info-box">
                             <h3 class="category-title">Relationship Gifts</h3>
                             <p class="category-desc">For Mom, Dad, Wife, Friends & more</p>
@@ -42,7 +45,7 @@
                     </a>
                     <a href="personality.html" class="category-card personality">
                         <div class="category-glow"></div>
-                        <div class="category-icon">🎭</div>
+                        <img class="category-image" src="images/categories/personality.png" alt="Personality Gifts">
                         <div class="category-info-box">
                             <h3 class="category-title">Personality Gifts</h3>
                             <p class="category-desc">For Gamers, Bookworms, Music Lovers</p>
@@ -50,7 +53,7 @@
                     </a>
                     <a href="emotion.html" class="category-card emotion">
                         <div class="category-glow"></div>
-                        <div class="category-icon">😊</div>
+                        <img class="category-image" src="images/categories/emotion.png" alt="Emotion Gifts">
                         <div class="category-info-box">
                             <h3 class="category-title">Emotion Gifts</h3>
                             <p class="category-desc">Say Thank You, Sorry, or Good Luck</p>
@@ -58,7 +61,7 @@
                     </a>
                     <a href="festival.html" class="category-card festival">
                         <div class="category-glow"></div>
-                        <div class="category-icon">🎉</div>
+                        <img class="category-image" src="images/categories/festival.png" alt="Festival Gifts">
                         <div class="category-info-box">
                             <h3 class="category-title">Festival Gifts</h3>
                             <p class="category-desc">Diwali, Christmas, Rakhi & Ugadi</p>
@@ -66,7 +69,7 @@
                     </a>
                     <a href="customized.html" class="category-card customized">
                         <div class="category-glow"></div>
-                        <div class="category-icon">✨</div>
+                        <img class="category-image" src="images/categories/customized.png" alt="Customized Gifts">
                         <div class="category-info-box">
                             <h3 class="category-title">Customized Gifts</h3>
                             <p class="category-desc">Personalized photo mugs, shirts & frames</p>
@@ -74,7 +77,7 @@
                     </a>
                     <a href="trending.html" class="category-card trending">
                         <div class="category-glow"></div>
-                        <div class="category-icon">🔥</div>
+                        <img class="category-image" src="images/categories/trending.png" alt="Trending Gifts">
                         <div class="category-info-box">
                             <h3 class="category-title">Trending Gifts</h3>
                             <p class="category-desc">Bestsellers, Top Rated & New Arrivals</p>
@@ -85,13 +88,13 @@
 
             <h2 class="section-title">Our Gift Collection</h2>
             <div class="products-grid" id="products-container">
-                </div>
+            </div>
 
             <div id="product-modal" class="modal">
                 <div class="modal-content">
                     <span class="close-btn" onclick="closeModal()">&times;</span>
                     <div class="modal-body" id="modal-product-details">
-                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -100,7 +103,7 @@
             <h2 class="section-title">Your Shopping Cart</h2>
             <div class="cart-container">
                 <div class="cart-items" id="cart-items-container">
-                    </div>
+                </div>
                 <div class="cart-summary">
                     <h3>Order Summary</h3>
                     <div class="summary-row"><span>Subtotal:</span> <span id="cart-subtotal">$0.00</span></div>
@@ -118,7 +121,7 @@
                     <button id="login-tab" class="auth-tab active" onclick="switchAuthMode('login')">Login</button>
                     <button id="register-tab" class="auth-tab" onclick="switchAuthMode('register')">Register</button>
                 </div>
-                
+
                 <form id="login-form" class="auth-form" onsubmit="handleAuth(event, 'login')">
                     <h3>Welcome Back</h3>
                     <div class="form-group">
@@ -155,4 +158,5 @@
 
     <script src="js/script.js"></script>
 </body>
+
 </html>
