@@ -14,7 +14,7 @@ const PRODUCTS = [
     // Existing base products (tagged for category/subcategory mapping)
     { id: 1, name: "Handmade Scented Candle Set", price: 24.99, image: "images/products/scented_candle.png", alt: "Premium handmade scented soy wax candle set", desc: "Premium organic soy wax candles with essential oils.", category: "trending", subcategory: "Best Sellers" },
     { id: 2, name: "Customized Photo Leather Journal", price: 19.99, image: "images/products/personalized_journal.png", alt: "Custom engraved leather journal", desc: "Engraved genuine leather journal notebook.", category: "customized", subcategory: "Name Gifts" },
-    { id: 3, name: "Galaxy Glow Glass Orbs", price: 34.50, image: "images/products/galaxy_orb.png", alt: "USB powered glowing galaxy glass orb decoration", desc: "A mesmerizing miniature universe glowing via USB power.", category: "trending", subcategory: "Best Sellers" },
+    { id: 3, name: "Galaxy Glow Glass Orbs", price: 34.50, image: "images/products/Galaxy Glow Glass Orbs.jpeg", alt: "USB powered glowing galaxy glass orb decoration", desc: "A mesmerizing miniature universe glowing via USB power.", category: "trending", subcategory: "Best Sellers" },
     { id: 4, name: "Luxury Chocolate Gift Box", price: 29.99, image: "images/products/chocolate_box.png", alt: "Box of premium Swiss chocolates and truffles", desc: "16 assortments of artisanal Swiss chocolates.", category: "trending", subcategory: "Most Loved Gifts" },
     { id: 5, name: "Preserved Eternal Rose Bouquet", price: 45.00, image: "images/products/flower_bouquet.png", alt: "Bouquet of preserved real roses in red and white", desc: "Real roses treated to last up to 3 years without water.", category: "relationship", subcategory: "For Wife" },
     { id: 6, name: "Cute Ceramic Mug Trio", price: 15.99, image: "images/products/mug.png", alt: "Three cute stackable minimalist ceramic mugs", desc: "Three custom minimalist animal themed stackable mugs.", category: "trending", subcategory: "Most Loved Gifts" },
@@ -25,39 +25,39 @@ const PRODUCTS = [
     { id: 103, name: "Teddy Bear", price: 18.50, image: "images/products/teddy_bear.png", alt: "Fluffy cuddly teddy bear with a red velvet bow", desc: "Soft, cuddly teddy bear perfect to express comfort and love.", category: "emotion", subcategory: "Get Well Soon Gifts" },
     { id: 104, name: "Travel Kit", price: 34.99, image: "images/products/travel_kit.png", alt: "Premium travel leather passport cover and luggage tag kit", desc: "Premium travel accessories set including passport cover and organizer.", category: "personality", subcategory: "For Travelers" },
     { id: 105, name: "Coffee Hamper", price: 42.00, image: "images/products/coffee_set.png", alt: "Premium coffee gift box with single-origin beans and french press", desc: "Curated selection of single-origin coffee beans, mug, and cookies.", category: "personality", subcategory: "For Coffee Lovers" },
-    { id: 106, name: "Festival Gift Hamper", price: 49.99, image: "images/categories/festival.png", alt: "Deluxe holiday sweets and lights festive hamper", desc: "Deluxe holiday sweets, snacks, and lights combination.", category: "festival", subcategory: "New Year Gifts" },
+    { id: 106, name: "Festival Gift Hamper", price: 49.99, image: "images/products/gift_hamper.png", alt: "Deluxe holiday sweets and lights festive hamper", desc: "Deluxe holiday sweets, snacks, and lights combination.", category: "festival", subcategory: "New Year Gifts" },
     { id: 107, name: "Chocolate Gift Box", price: 25.00, image: "images/products/chocolate_box.png", alt: "Luxury chocolate truffle gift box", desc: "Decadent box of fine milk and dark chocolate truffles.", category: "trending", subcategory: "Best Sellers" },
 
     // Relationship Page Products
     { id: 7, name: "Best Mom Ever Hand-painted Mug", price: 18.90, image: "images/products/mug.png", alt: "Ceramic glazed mug for Mom", desc: "A charming, hand-glazed ceramic mug crafted specifically for moms.", category: "relationship", subcategory: "For Mom" },
     { id: 8, name: "Preserved Orchid Gift Set", price: 42.00, image: "images/products/flower_bouquet.png", alt: "Preserved orchids in glass bell jar", desc: "Exquisite preserved orchids in a premium glass bell jar.", category: "relationship", subcategory: "For Mom" },
-    { id: 9, name: "Gold Heart Pendant Necklace", price: 65.00, image: "images/products/flower_bouquet.png", alt: "18k gold-plated heart pendant necklace", desc: "18k gold-plated heart necklace that symbolizes pure love.", category: "relationship", subcategory: "For Mom" },
-    { id: 10, name: "Engraved Leather Wallet", price: 28.50, image: "images/products/travel_kit.png", alt: "Engraved genuine leather slim wallet", desc: "Slim genuine leather wallet engraved with a personal message.", category: "relationship", subcategory: "For Dad" },
-    { id: 11, name: "Premium Beard Grooming Kit", price: 32.00, image: "images/products/travel_kit.png", alt: "Premium organic beard grooming kit", desc: "Organic beard oils, wooden comb, and stainless steel scissors.", category: "relationship", subcategory: "For Dad" },
+    { id: 9, name: "Gold Heart Pendant Necklace", price: 65.00, image: "images/products/keychain.png", alt: "18k gold-plated heart pendant necklace", desc: "18k gold-plated heart necklace that symbolizes pure love.", category: "relationship", subcategory: "For Mom" },
+    { id: 10, name: "Engraved Leather Wallet", price: 28.50, image: "images/products/personalized_journal.png", alt: "Engraved genuine leather slim wallet", desc: "Slim genuine leather wallet engraved with a personal message.", category: "relationship", subcategory: "For Dad" },
+    { id: 11, name: "Premium Beard Grooming Kit", price: 32.00, image: "images/products/spa_basket.png", alt: "Premium organic beard grooming kit", desc: "Organic beard oils, wooden comb, and stainless steel scissors.", category: "relationship", subcategory: "For Dad" },
     { id: 12, name: "Wooden Smart Docking Station", price: 38.00, image: "images/products/travel_kit.png", alt: "Wooden desktop organizer docking station", desc: "Keep watch, keys, wallet, and phone organized on his desk.", category: "relationship", subcategory: "For Dad" },
     { id: 13, name: "RGB Gaming Headset Stand", price: 24.99, image: "images/products/gaming_stand.png", alt: "Aluminum gaming headset stand with RGB underglow", desc: "Sleek aluminum stand with customizable underglow options.", category: "relationship", subcategory: "For Brother" },
     { id: 14, name: "Adventure Canvas Backpack", price: 45.99, image: "images/products/travel_kit.png", alt: "Water-resistant canvas adventure backpack", desc: "Rugged, water-resistant canvas pack perfect for daily commute.", category: "relationship", subcategory: "For Brother" },
     { id: 15, name: "Self-Care Spa Bath Basket", price: 49.90, image: "images/products/spa_basket.png", alt: "Self-care lavender spa bath basket", desc: "Includes aromatic bath bombs, body scrubs, and plush towel.", category: "relationship", subcategory: "For Sister" },
-    { id: 16, name: "Custom Name Script Necklace", price: 29.99, image: "images/products/flower_bouquet.png", alt: "Elegant scripted stainless steel name necklace", desc: "Elegantly scripted stainless steel name necklace.", category: "relationship", subcategory: "For Sister" },
+    { id: 16, name: "Custom Name Script Necklace", price: 29.99, image: "images/products/keychain.png", alt: "Elegant scripted stainless steel name necklace", desc: "Elegantly scripted stainless steel name necklace.", category: "relationship", subcategory: "For Sister" },
     { id: 17, name: "Friendship Photo Collage Frame", price: 22.00, image: "images/products/personalized_frame.png", alt: "Personalized wood collage frame for friendship photos", desc: "Displays 5 of your favorite moments together with custom text.", category: "relationship", subcategory: "For Best Friend" },
     { id: 18, name: "Aura Color-Changing Lamp", price: 35.00, image: "images/products/galaxy_orb.png", alt: "Touch-activated color changing ambiance light", desc: "Touch-activated color changing ambiance light.", category: "relationship", subcategory: "For Best Friend" },
     { id: 19, name: "Silk Pajama Lounge Set", price: 55.00, image: "images/products/tshirt.png", alt: "Mulberry silk pajama sleepwear set", desc: "Ultra-comfortable mulberry silk sleepwear set.", category: "relationship", subcategory: "For Wife" },
-    { id: 20, name: "Fossil Chronograph Watch", price: 120.00, image: "images/products/travel_kit.png", alt: "Stainless steel Fossil chronograph watch", desc: "Classic stainless steel watch with timeless style.", category: "relationship", subcategory: "For Husband" },
+    { id: 20, name: "Fossil Chronograph Watch", price: 120.00, image: "images/products/keychain.png", alt: "Stainless steel Fossil chronograph watch", desc: "Classic stainless steel watch with timeless style.", category: "relationship", subcategory: "For Husband" },
     { id: 21, name: "Engraved Whiskey Decanter Set", price: 68.00, image: "images/products/whiskey_set.png", alt: "Crystal whiskey decanter and matching glasses set", desc: "Premium crystal decanter with 2 matching glasses.", category: "relationship", subcategory: "For Husband" },
 
     // Personality Page Products
     { id: 22, name: "Premium Oak Book Nook Insert", price: 45.00, image: "images/products/book_nook.png", alt: "Miniature bookshelf divider nook insert with LED lights", desc: "An architectural miniature shelf divider with warm LED lights.", category: "personality", subcategory: "For Book Lovers" },
-    { id: 23, name: "Embossed Leather Bookmarks", price: 12.99, image: "images/products/book_nook.png", alt: "Hand-tooled genuine leather bookmarks", desc: "Hand-tooled full-grain leather bookmarks, set of 3.", category: "personality", subcategory: "For Book Lovers" },
+    { id: 23, name: "Embossed Leather Bookmarks", price: 12.99, image: "images/products/personalized_journal.png", alt: "Hand-tooled genuine leather bookmarks", desc: "Hand-tooled full-grain leather bookmarks, set of 3.", category: "personality", subcategory: "For Book Lovers" },
     { id: 24, name: "Ergonomic Mechanical Keyboard", price: 89.00, image: "images/products/keyboard.png", alt: "Tactile hot-swappable mechanical gaming keyboard with RGB", desc: "Hot-swappable tactile keys with gorgeous RGB backlighting.", category: "personality", subcategory: "For Gamers" },
     { id: 25, name: "Classic Retro Arcade Mini Cabinet", price: 99.00, image: "images/products/keyboard.png", alt: "Retro arcade mini console with LCD screen", desc: "Play 200 built-in retro games on a crisp 3-inch LCD screen.", category: "personality", subcategory: "For Gamers" },
     { id: 26, name: "Scratch-off World Map Poster", price: 19.99, image: "images/products/travel_kit.png", alt: "Scratch-off world map tracking travel journeys", desc: "Track your journeys by scratching away the gold foil layer.", category: "personality", subcategory: "For Travelers" },
-    { id: 27, name: "Monogrammed Passport Holder", price: 24.50, image: "images/products/travel_kit.png", alt: "Monogrammed leather passport holder cover", desc: "Handcrafted leather cover with handy card slots.", category: "personality", subcategory: "For Travelers" },
-    { id: 28, name: "Smart Water Bottle", price: 39.99, image: "images/products/galaxy_orb.png", alt: "Smart water bottle with UV-C sterilizer", desc: "Reminds you to drink water and sterilizes using UV-C light.", category: "personality", subcategory: "For Fitness Lovers" },
-    { id: 29, name: "Deep Tissue Massage Gun", price: 79.99, image: "images/products/travel_kit.png", alt: "Deep tissue muscle massage gun with attachments", desc: "Includes 6 dynamic massage heads for targeted muscle relief.", category: "personality", subcategory: "For Fitness Lovers" },
+    { id: 27, name: "Monogrammed Passport Holder", price: 24.50, image: "images/products/personalized_journal.png", alt: "Monogrammed leather passport holder cover", desc: "Handcrafted leather cover with handy card slots.", category: "personality", subcategory: "For Travelers" },
+    { id: 28, name: "Smart Water Bottle", price: 39.99, image: "images/products/spa_basket.png", alt: "Smart water bottle with UV-C sterilizer", desc: "Reminds you to drink water and sterilizes using UV-C light.", category: "personality", subcategory: "For Fitness Lovers" },
+    { id: 29, name: "Deep Tissue Massage Gun", price: 79.99, image: "images/products/spa_basket.png", alt: "Deep tissue muscle massage gun with attachments", desc: "Includes 6 dynamic massage heads for targeted muscle relief.", category: "personality", subcategory: "For Fitness Lovers" },
     { id: 30, name: "Smart Temperature Control Mug", price: 95.00, image: "images/products/mug.png", alt: "Smart temperature control smart travel mug", desc: "Keeps your brew at the perfect temperature all day.", category: "personality", subcategory: "For Coffee Lovers" },
     { id: 31, name: "Artisanal Coffee Bean Sampler", price: 34.00, image: "images/products/coffee_set.png", alt: "Six roast variety bag set of single-origin coffee beans", desc: "Six different whole bean single-origin coffees from global roasters.", category: "personality", subcategory: "For Coffee Lovers" },
-    { id: 32, name: "Vintage Bluetooth Turntable", price: 110.00, image: "images/products/keyboard.png", alt: "Vintage retro record player briefcase style turntable", desc: "Classic suitcase record player with high-fidelity stereo speakers.", category: "personality", subcategory: "For Music Lovers" },
-    { id: 33, name: "Guitar Pick Punch Kit", price: 18.50, image: "images/products/keyboard.png", alt: "Guitar pick punch tool maker kit", desc: "Punch your own custom guitar picks from old credit cards.", category: "personality", subcategory: "For Music Lovers" },
+    { id: 32, name: "Vintage Bluetooth Turntable", price: 110.00, image: "images/products/whiskey_set.png", alt: "Vintage retro record player briefcase style turntable", desc: "Classic suitcase record player with high-fidelity stereo speakers.", category: "personality", subcategory: "For Music Lovers" },
+    { id: 33, name: "Guitar Pick Punch Kit", price: 18.50, image: "images/products/keychain.png", alt: "Guitar pick punch tool maker kit", desc: "Punch your own custom guitar picks from old credit cards.", category: "personality", subcategory: "For Music Lovers" },
 
     // Emotion Page Products
     { id: 34, name: "Grateful Heart Succulent Garden", price: 29.99, image: "images/products/flower_bouquet.png", alt: "Arranged live micro-succulents garden pot", desc: "A beautifully arranged pot of live micro-succulents.", category: "emotion", subcategory: "Thank You Gifts" },
@@ -65,20 +65,20 @@ const PRODUCTS = [
     { id: 36, name: "Sweet Apology Chocolate Box", price: 22.00, image: "images/products/chocolate_box.png", alt: "Sweet apology gourmet chocolate truffles spelling SORRY", desc: "Assortment of dark truffles spell-out 'SORRY' in style.", category: "emotion", subcategory: "Sorry Gifts" },
     { id: 37, name: "Handmade Lavender Mist Duo", price: 16.90, image: "images/products/scented_candle.png", alt: "Calming essential oil lavender mist spray duo", desc: "Calming essential oil sprays to soothe and refresh.", category: "emotion", subcategory: "Sorry Gifts" },
     { id: 38, name: "Four-Leaf Clover Silver Keychain", price: 12.00, image: "images/products/keychain.png", alt: "Real dried four-leaf clover resin keychain", desc: "Real dried four-leaf clover encased in a resin keychain.", category: "emotion", subcategory: "Good Luck Gifts" },
-    { id: 39, name: "Amethyst Feng Shui Gem Tree", price: 34.99, image: "images/products/flower_bouquet.png", alt: "Amethyst crystal bonsai gem tree decoration", desc: "Brings positive energy, prosperity, and focus to your room.", category: "emotion", subcategory: "Good Luck Gifts" },
+    { id: 39, name: "Amethyst Feng Shui Gem Tree", price: 34.99, image: "images/products/galaxy_orb.png", alt: "Amethyst crystal bonsai gem tree decoration", desc: "Brings positive energy, prosperity, and focus to your room.", category: "emotion", subcategory: "Good Luck Gifts" },
     { id: 40, name: "Pop the Bubbly Champagne Flutes", price: 39.00, image: "images/products/whiskey_set.png", alt: "Gold-dipped base crystal champagne flutes pair", desc: "Hand-blown crystal glasses with gold-dipped bases.", category: "emotion", subcategory: "Congratulations Gifts" },
     { id: 41, name: "Gourmet Celebration Snack Hamper", price: 55.00, image: "images/products/gift_hamper.png", alt: "Gourmet cheeses and celebration snack basket hamper", desc: "Filled with cheeses, crackers, olives, and premium nuts.", category: "emotion", subcategory: "Congratulations Gifts" },
-    { id: 42, name: "Cozy Fleece & Fuzzy Socks Set", price: 35.00, image: "images/products/teddy_bear.png", alt: "Super soft fleece blanket and fuzzy thermal socks combo", desc: "Luxuriously soft blanket paired with thermal crew socks.", category: "emotion", subcategory: "Get Well Soon Gifts" },
-    { id: 43, name: "Eucalyptus Therapeutic Bath Salts", price: 19.99, image: "images/products/scented_candle.png", alt: "Eucalyptus organic therapeutic sea bath salts", desc: "Mineral-rich sea salts blended with pure essential oils.", category: "emotion", subcategory: "Get Well Soon Gifts" },
+    { id: 42, name: "Cozy Fleece & Fuzzy Socks Set", price: 35.00, image: "images/products/spa_basket.png", alt: "Super soft fleece blanket and fuzzy thermal socks combo", desc: "Luxuriously soft blanket paired with thermal crew socks.", category: "emotion", subcategory: "Get Well Soon Gifts" },
+    { id: 43, name: "Eucalyptus Therapeutic Bath Salts", price: 19.99, image: "images/products/spa_basket.png", alt: "Eucalyptus organic therapeutic sea bath salts", desc: "Mineral-rich sea salts blended with pure essential oils.", category: "emotion", subcategory: "Get Well Soon Gifts" },
 
     // Festival Page Products
-    { id: 44, name: "Premium Handcrafted Clay Diyas", price: 15.00, image: "images/categories/festival.png", alt: "Traditional hand-painted Indian clay terracotta diyas set", desc: "Set of 6 hand-painted terracotta lamps for home decoration.", category: "festival", subcategory: "Diwali Gifts" },
-    { id: 45, name: "Artisanal Sweets & Dry Fruit Box", price: 39.90, image: "images/products/chocolate_box.png", alt: "Artisanal traditional sweets and nuts gift box", desc: "Traditional luxury festive sweet treats assortment.", category: "festival", subcategory: "Diwali Gifts" },
-    { id: 46, name: "Custom Holiday Monogram Stocking", price: 14.99, image: "images/categories/festival.png", alt: "Embroidered felt custom Christmas stocking", desc: "Embroidered felt stocking with festive reindeer patterns.", category: "festival", subcategory: "Christmas Gifts" },
-    { id: 47, name: "Gourmet Hot Chocolate Bomb Kit", price: 24.00, image: "images/categories/festival.png", alt: "Gourmet marshmallow hot cocoa bomb set", desc: "Four chocolate bombs packed with marshmallows.", category: "festival", subcategory: "Christmas Gifts" },
-    { id: 48, name: "Premium Goal Planner & Pen Set", price: 29.99, image: "images/products/book_nook.png", alt: "Faux leather journal goal planner and pen set", desc: "2027 daily planner with faux-leather cover and ballpoint pen.", category: "festival", subcategory: "New Year Gifts" },
-    { id: 49, name: "925 Silver Rakhi Combo Set", price: 18.00, image: "images/categories/festival.png", alt: "Silver thread Rakhi combo set for Raksha Bandhan", desc: "Elegantly designed silver thread Rakhi with roli-chawal pack.", category: "festival", subcategory: "Raksha Bandhan Gifts" },
-    { id: 50, name: "Traditional Mango Leaf Brass Toran", price: 32.50, image: "images/categories/festival.png", alt: "Auspicious brass door toran hanging decoration", desc: "Auspicious door decoration set for Ugadi and new beginnings.", category: "festival", subcategory: "Ugadi Gifts" },
+    { id: 44, name: "Premium Handcrafted Clay Diyas", price: 15.00, image: "images/products/scented_candle.png", alt: "Traditional hand-painted Indian clay terracotta diyas set", desc: "Set of 6 hand-painted terracotta lamps for home decoration.", category: "festival", subcategory: "Diwali Gifts" },
+    { id: 45, name: "Artisanal Sweets & Dry Fruit Box", price: 39.90, image: "images/products/chocolate_box.png", alt: "Artisanal traditional sweets and nuts gift box", desc: "Traditional luxury festive sweets assortment.", category: "festival", subcategory: "Diwali Gifts" },
+    { id: 46, name: "Custom Holiday Monogram Stocking", price: 14.99, image: "images/products/tshirt.png", alt: "Embroidered felt custom Christmas stocking", desc: "Embroidered felt stocking with festive reindeer patterns.", category: "festival", subcategory: "Christmas Gifts" },
+    { id: 47, name: "Gourmet Hot Chocolate Bomb Kit", price: 24.00, image: "images/products/chocolate_box.png", alt: "Gourmet marshmallow hot cocoa bomb set", desc: "Four chocolate bombs packed with marshmallows.", category: "festival", subcategory: "Christmas Gifts" },
+    { id: 48, name: "Premium Goal Planner & Pen Set", price: 29.99, image: "images/products/personalized_journal.png", alt: "Faux leather journal goal planner and pen set", desc: "2027 daily planner with faux-leather cover and ballpoint pen.", category: "festival", subcategory: "New Year Gifts" },
+    { id: 49, name: "925 Silver Rakhi Combo Set", price: 18.00, image: "images/products/keychain.png", alt: "Silver thread Rakhi combo set for Raksha Bandhan", desc: "Elegantly designed silver thread Rakhi with roli-chawal pack.", category: "festival", subcategory: "Raksha Bandhan Gifts" },
+    { id: 50, name: "Traditional Mango Leaf Brass Toran", price: 32.50, image: "images/products/flower_bouquet.png", alt: "Auspicious brass door toran hanging decoration", desc: "Auspicious door decoration set for Ugadi and new beginnings.", category: "festival", subcategory: "Ugadi Gifts" },
 
     // Customized Page Products
     { id: 51, name: "Engraved Wooden Photo Frame", price: 24.90, image: "images/products/personalized_frame.png", alt: "Engraved pine wood memory photo frame", desc: "Solid pine wood frame engraved with your chosen date/quote.", category: "customized", subcategory: "Photo Frames" },
@@ -105,14 +105,16 @@ const SUBCATEGORIES = {
 let cart = [];
 let currentUser = null;
 let activeSearchQuery = ""; // Tracks the user's active search query
+let isCollectionExpanded = false; // Tracks whether "Our Gift Collection" is fully expanded
+const INITIAL_VISIBLE_COUNT = 8; // 2 rows × 4 columns
 
 // Run initialization code once the page DOM is loaded
 document.addEventListener("DOMContentLoaded", () => {
     loadCartAndSession();
-    
+
     // Check if we are currently on the homepage (which contains products-container)
     const isHomePage = document.getElementById('products-container') !== null;
-    
+
     if (isHomePage) {
         loadProducts();
         handleURLParams();
@@ -120,7 +122,7 @@ document.addEventListener("DOMContentLoaded", () => {
         // We are on a specific category subpage
         initCategoryPage();
     }
-    
+
     updateCartUI();
 });
 
@@ -130,7 +132,7 @@ function loadCartAndSession() {
     if (savedCart) {
         cart = JSON.parse(savedCart);
     }
-    
+
     const savedUser = localStorage.getItem('giftshop_user');
     if (savedUser) {
         currentUser = savedUser;
@@ -163,12 +165,12 @@ function handleURLParams() {
 function showPage(pageId) {
     const pageElement = document.getElementById(pageId);
     if (!pageElement) return;
-    
+
     document.querySelectorAll('.page').forEach(page => {
         page.classList.remove('active');
     });
     pageElement.classList.add('active');
-    
+
     // Clean up query parameters from the browser address bar
     window.history.pushState({}, document.title, window.location.pathname);
 }
@@ -191,9 +193,9 @@ function highlightText(text, query) {
  * Fired as the user types in the header search input field.
  * Synchronizes inputs and filters the DOM grid dynamically.
  */
-window.handleSearch = function(query) {
+window.handleSearch = function (query) {
     activeSearchQuery = query.trim();
-    
+
     // Sync all header search inputs across the DOM
     document.querySelectorAll('.search-input').forEach(input => {
         if (input.value !== query) {
@@ -218,7 +220,7 @@ window.handleSearch = function(query) {
 function loadProducts() {
     const container = document.getElementById('products-container');
     if (!container) return;
-    
+
     // Filter matching results in Name, Description, Category, or Subcategory
     const filtered = PRODUCTS.filter(product => {
         const query = activeSearchQuery.toLowerCase();
@@ -239,33 +241,74 @@ function loadProducts() {
                 <p style="font-size: 0.95rem; margin-top: 0.5rem;">We couldn't find any gifts matching "${activeSearchQuery}". Please try checking your spelling or search terms!</p>
             </div>
         `;
+        updateExploreButton(0);
         return;
     }
-    
-    container.innerHTML = filtered.map(product => {
+
+    // If the user is searching, show all results; otherwise apply the 2-row limit
+    const isSearching = activeSearchQuery.length > 0;
+    const showAll = isSearching || isCollectionExpanded;
+
+    container.innerHTML = filtered.map((product, index) => {
         // Highlight matching characters in product title
         const highlightedName = highlightText(product.name, activeSearchQuery);
+        const hiddenClass = (!showAll && index >= INITIAL_VISIBLE_COUNT) ? ' hidden-product' : '';
         return `
-            <div class="product-card" onclick="openProductDetails(${product.id})">
+            <div class="product-card${hiddenClass}" onclick="openProductDetails(${product.id})">
                 <div class="product-img"><img src="${product.image}" alt="${product.alt}" loading="lazy"></div>
                 <div class="product-info">
                     <h3 class="product-title">${highlightedName}</h3>
-                    <p class="product-price">$${product.price.toFixed(2)}</p>
+                    <p class="product-price">₹${product.price.toFixed(2)}</p>
                     <button class="btn" onclick="event.stopPropagation(); addToCart(${product.id})">Add to Cart</button>
                 </div>
             </div>
         `;
     }).join('');
+
+    // Show or hide the Explore button depending on product count
+    updateExploreButton(isSearching ? 0 : filtered.length);
+}
+
+// Update the Explore button visibility and label
+function updateExploreButton(totalCount) {
+    const exploreBtn = document.getElementById('explore-btn');
+    if (!exploreBtn) return;
+
+    if (totalCount > INITIAL_VISIBLE_COUNT) {
+        exploreBtn.classList.remove('hidden');
+        const hiddenCount = totalCount - INITIAL_VISIBLE_COUNT;
+        if (isCollectionExpanded) {
+            exploreBtn.innerHTML = `<i class="fas fa-chevron-up"></i> Show Less`;
+        } else {
+            exploreBtn.innerHTML = `<i class="fas fa-th"></i> Explore All Gifts (${hiddenCount} more)`;
+        }
+    } else {
+        exploreBtn.classList.add('hidden');
+    }
+}
+
+// Toggle the expanded/collapsed state of the product collection
+function toggleExploreCollection() {
+    isCollectionExpanded = !isCollectionExpanded;
+    loadProducts();
+
+    // If collapsing, scroll back to the collection section
+    if (!isCollectionExpanded) {
+        const section = document.querySelector('.section-title');
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    }
 }
 
 // Initialize Category Subpage tabs and layouts
 function initCategoryPage() {
     const category = document.body.getAttribute('data-category');
     if (!category || !SUBCATEGORIES[category]) return;
-    
+
     const subcats = SUBCATEGORIES[category];
     const navContainer = document.getElementById('subcategories-container');
-    
+
     if (navContainer) {
         // Render subcategory tabs
         navContainer.innerHTML = subcats.map((sub, index) => `
@@ -274,7 +317,7 @@ function initCategoryPage() {
             </button>
         `).join('');
     }
-    
+
     // Load products of the first subcategory by default
     if (subcats.length > 0) {
         filterCategoryProducts(category, subcats[0]);
@@ -288,7 +331,7 @@ function selectSubcategory(category, subcategory, element) {
         pill.classList.remove('active');
     });
     element.classList.add('active');
-    
+
     // Trigger fade-in refresh animation
     const gridContainer = document.getElementById('category-products-container');
     if (gridContainer) {
@@ -296,7 +339,7 @@ function selectSubcategory(category, subcategory, element) {
         void gridContainer.offsetWidth; // Reflow reset
         gridContainer.classList.add('animate-fade-in');
     }
-    
+
     filterCategoryProducts(category, subcategory);
 }
 
@@ -304,21 +347,21 @@ function selectSubcategory(category, subcategory, element) {
 function filterCategoryProducts(category, subcategory) {
     const container = document.getElementById('category-products-container');
     if (!container) return;
-    
+
     // Filter matching products by category, active subcategory, and header search query
     const filtered = PRODUCTS.filter(product => {
         const matchesCategory = product.category === category;
         const matchesSubcategory = subcategory ? product.subcategory === subcategory : true;
-        
+
         const query = activeSearchQuery.toLowerCase();
-        const matchesSearch = 
+        const matchesSearch =
             product.name.toLowerCase().includes(query) ||
             product.desc.toLowerCase().includes(query) ||
             (product.subcategory && product.subcategory.toLowerCase().includes(query));
-            
+
         return matchesCategory && matchesSubcategory && matchesSearch;
     });
-    
+
     // Fallback: If no products matched, show beginner-friendly error block
     if (filtered.length === 0) {
         container.innerHTML = `
@@ -330,7 +373,7 @@ function filterCategoryProducts(category, subcategory) {
         `;
         return;
     }
-    
+
     container.innerHTML = filtered.map(product => {
         // Highlight matching characters in product title
         const highlightedName = highlightText(product.name, activeSearchQuery);
@@ -339,7 +382,7 @@ function filterCategoryProducts(category, subcategory) {
                 <div class="product-img"><img src="${product.image}" alt="${product.alt}" loading="lazy"></div>
                 <div class="product-info">
                     <h3 class="product-title">${highlightedName}</h3>
-                    <p class="product-price">$${product.price.toFixed(2)}</p>
+                    <p class="product-price">₹${product.price.toFixed(2)}</p>
                     <button class="btn" onclick="event.stopPropagation(); addToCart(${product.id})">Add to Cart</button>
                 </div>
             </div>
@@ -351,17 +394,17 @@ function filterCategoryProducts(category, subcategory) {
 function openProductDetails(id) {
     const product = PRODUCTS.find(p => p.id === id);
     if (!product) return;
-    
+
     const modal = document.getElementById('product-modal');
     const content = document.getElementById('modal-product-details');
     if (!modal || !content) return;
-    
+
     content.innerHTML = `
         <div class="modal-grid">
             <div class="product-img" style="height:250px;"><img src="${product.image}" alt="${product.alt}"></div>
             <div>
                 <h2 style="font-weight: 800; line-height: 1.2; color: var(--secondary-color);">${product.name}</h2>
-                <p class="product-price" style="margin: 1rem 0; font-size: 1.5rem;">$${product.price.toFixed(2)}</p>
+                <p class="product-price" style="margin: 1rem 0; font-size: 1.5rem;">₹${product.price.toFixed(2)}</p>
                 <p style="margin-bottom: 1.5rem; color:#718096; line-height: 1.5;">${product.desc}</p>
                 <button class="btn" onclick="addToCart(${product.id}); closeModal();">Add To Cart</button>
             </div>
@@ -382,17 +425,17 @@ function closeModal() {
 function addToCart(id) {
     const product = PRODUCTS.find(p => p.id === id);
     if (!product) return;
-    
+
     const existingItem = cart.find(item => item.id === id);
     if (existingItem) {
         existingItem.quantity += 1;
     } else {
         cart.push({ ...product, quantity: 1 });
     }
-    
+
     saveCart();
     updateCartUI();
-    
+
     // Visual Toast confirmation notification popup
     showToast(`Added ${product.name} to cart! 🛒`);
 }
@@ -421,10 +464,10 @@ function updateCartUI() {
                 <div class="cart-item">
                     <div class="cart-item-details">
                         <h4 style="font-weight: 700;">${item.name}</h4>
-                        <small>$${item.price.toFixed(2)} x ${item.quantity}</small>
+                        <small>₹${item.price.toFixed(2)} x ${item.quantity}</small>
                     </div>
                     <div>
-                        <span style="font-weight:600; margin-right:15px;">$${(item.price * item.quantity).toFixed(2)}</span>
+                        <span style="font-weight:600; margin-right:15px;">₹${(item.price * item.quantity).toFixed(2)}</span>
                         <button class="remove-item-btn" onclick="removeFromCart(${item.id})"><i class="fas fa-trash"></i></button>
                     </div>
                 </div>
@@ -435,9 +478,9 @@ function updateCartUI() {
     const subtotalEl = document.getElementById('cart-subtotal');
     const totalEl = document.getElementById('cart-total');
     const subtotal = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
-    
-    if (subtotalEl) subtotalEl.innerText = `$${subtotal.toFixed(2)}`;
-    if (totalEl) totalEl.innerText = `$${subtotal.toFixed(2)}`;
+
+    if (subtotalEl) subtotalEl.innerText = `₹${subtotal.toFixed(2)}`;
+    if (totalEl) totalEl.innerText = `₹${subtotal.toFixed(2)}`;
 }
 
 // Process Order action check block
@@ -451,7 +494,7 @@ function processOrder() {
         showPage('auth-page');
         return;
     }
-    
+
     alert(`Thank you, ${currentUser}! Your order has been processed successfully. 🎉`);
     cart = [];
     saveCart();
@@ -486,15 +529,15 @@ function handleAuth(event, type) {
     event.preventDefault();
     const form = event.target;
     const email = form.querySelector('input[type="email"]').value;
-    
+
     currentUser = email.split('@')[0]; // Set username handle
     localStorage.setItem('giftshop_user', currentUser);
-    
+
     const navBtn = document.getElementById('auth-nav-btn');
     if (navBtn) {
         navBtn.innerText = `Hi, ${currentUser}`;
     }
-    
+
     alert(`${type === 'login' ? 'Logged in' : 'Registered'} successfully as ${currentUser}!`);
     form.reset();
     showPage('products-page');
@@ -522,11 +565,11 @@ function showToast(message) {
         toast.style.transform = 'translateY(10px)';
         document.body.appendChild(toast);
     }
-    
+
     toast.innerText = message;
     toast.style.opacity = '1';
     toast.style.transform = 'translateY(0)';
-    
+
     setTimeout(() => {
         toast.style.opacity = '0';
         toast.style.transform = 'translateY(10px)';
